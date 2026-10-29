@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <title>Kampus Tangerang – Rekomendasi Universitas</title>
+
+  <!-- File CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Dekorasi bintang di latar belakang -->
+  <div class="star-background" aria-hidden="true"></div>
+
+  <div class="wrap">
+
+    <!-- Header Website -->
+    <header>
+      <h1>Your Future Starts with One Search</h1>
+      <p>Temukan kampus yang sejalan dengan impianmu di Tangerang!</p>
+      <p>Dari pilihan universitas dan jurusan hingga informasi beasiswa dan bantuan biaya pendidikan</p>
+      <p>semua bisa kamu jelajahi dalam satu tempat.</p>
+      <p>Mulai perjalananmu di sini. ♡</p>
+    </header>
+
+    <!-- Bagian Pencarian dan Filter -->
+    <section
+      class="tools"
+      aria-label="Cari dan filter kampus"
+    >
+
+      <!-- Pencarian Kampus -->
+      <div>
+        <label for="q">
+          Cari nama kampus atau jurusan
+        </label>
+
+        <input
+          id="q"
+          type="search"
+          placeholder="Contoh: desain, kedokteran, teknik"
+        >
+      </div>
+
+      <!-- Pilihan Filter -->
+      <div class="filters">
+
+        <!-- Filter Wilayah -->
+        <div>
+          <label for="area">Wilayah</label>
+
+          <select id="area">
+            <option value="">Semua wilayah</option>
+          </select>
+        </div>
+
+        <!-- Filter Jenis Kampus -->
+        <div>
+          <label for="type">Jenis kampus</label>
+
+          <select id="type">
+            <option value="">Semua jenis</option>
+          </select>
+        </div>
+
+        <!-- Filter Biaya -->
+        <div>
+          <label for="cost">Perkiraan biaya</label>
+
+          <select id="cost">
+            <option value="">Semua kisaran</option>
+            <option value="Terjangkau">Terjangkau</option>
+            <option value="Menengah">Menengah</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+
+        <!-- Filter Beasiswa -->
+        <div>
+          <label for="sch">Beasiswa</label>
+
+          <select id="sch">
+            <option value="">Semua</option>
+            <option value="ada">
+              Hanya yang ada beasiswa
+            </option>
+          </select>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Jumlah Hasil dan Tombol Reset -->
+    <div class="bar">
+
+      <span id="count"></span>
+
+      <button
+        class="reset"
+        id="reset"
+        type="button"
+      >
+        Hapus filter
+      </button>
+
+    </div>
+
+    <!-- Daftar Hasil Kampus -->
+    <div
+      id="list"
+      class="grid"
+      aria-live="polite"
+    ></div>
+
+    <!-- Tips Memilih Kampus -->
+    <section class="tips">
+      <h2>Tips memilih kampus</h2>
+
+      <ul>
+        <li>
+          Cek akreditasi program studi, bukan hanya kampus,
+          melalui laman BAN-PT.
+        </li>
+
+        <li>
+          Kunjungi open house atau tur kampus untuk melihat
+          fasilitas secara langsung.
+        </li>
+
+        <li>
+          Hitung biaya total, termasuk uang pangkal,
+          biaya kuliah per semester, dan transportasi.
+        </li>
+
+        <li>
+          Tanyakan peluang beasiswa, program magang,
+          dan kerja sama industri.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Catatan Informasi -->
+    <footer>
+      Informasi bersifat umum dan dapat berubah.
+      Kategori biaya merupakan perkiraan, bukan angka resmi.
+      Pastikan informasi terbaru melalui situs resmi
+      masing-masing kampus.
+    </footer>
+
+    <footer>
+      2026 - Created by: Dina dan Syarlie
+    </footer>
+
+  </div>
+
+  <!-- File JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
